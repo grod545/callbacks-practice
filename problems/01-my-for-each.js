@@ -20,13 +20,25 @@ myForEach(['laika', 'belka'], function (el) {
 });
 console.log(test); // ['LAIKA', 'BELKA']
 *******************************************************************************/
+let test = [];
+myForEach(['laika', 'belka'], function (el) {
+    test.push(el.toUpperCase());
+});
 
-function myForEach(array, cb) {
-    for (let i = 0; i <array.length; i++){
+function myForEach(array, cb){
+    for (let i = 0; i < array.length; i++){
         let el = array[i]
         cb(el, i, array)
     }
 }
+
+
+
+
+console.log(test); // ['LAIKA', 'BELKA']
+
+
+
 
 /*****************DO NOT MODIFY ANYTHING UNDER THIS  LINE**********************/
 try {
@@ -34,3 +46,17 @@ try {
 } catch(e) {
     return null;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
